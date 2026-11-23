@@ -52,3 +52,5 @@ h1 em{font-family:inherit;font-weight:400;font-style:normal;letter-spacing:-.045
 .tag-chip{border:0;background:transparent;border-radius:0;padding:0;color:#7b826d;font-size:12px;font-weight:400;line-height:1.6}
 .tag-chip+.tag-chip::before{content:'/';display:inline-block;margin:0 8px;color:#afb39f}
 @media(max-width:760px){.pick-note{left:0;top:215px;font-size:12px;width:100px;transform:rotate(-8deg)}.pick-note b{font-size:27px}.pick-note span{font-size:9px;letter-spacing:.5px}.pick-note svg{left:0;top:57px;width:42px}.tag-chip{padding:0;font-size:12px}}
+
+@media(max-width:760px){.pick-note{top:120px}}
