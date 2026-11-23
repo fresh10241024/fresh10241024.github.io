@@ -35,3 +35,13 @@ header nav button{font-weight:500;letter-spacing:.035em}
 @media(max-width:760px){#modal-content h2{font-size:29px}.journal-card h3{font-size:23px}.article-body p{font-size:16px!important;line-height:1.95!important}.article-body h3{font-size:22px}.tag-chip{font-size:12px;padding:5px 8px}}
 
 .journal-card h3{text-wrap:balance}
+
+/* Playful poster lettering is reserved for display titles. */
+@font-face{font-family:'Kitchen Display';src:url('assets/fonts/zcool-kuaile.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+h1{font-family:'Kitchen Display','PingFang SC',sans-serif;font-weight:400;letter-spacing:-.045em;font-size:clamp(74px,8.6vw,132px)}
+h1 em{font-family:inherit;font-weight:400;font-style:normal;letter-spacing:-.045em;display:inline-block;transform:rotate(-3deg)}
+#modal-content h2,.journal-card h3{font-family:'Kitchen Display','PingFang SC',sans-serif;font-weight:400;letter-spacing:.015em;line-height:1.45;font-synthesis:none}
+#modal-content h2{font-size:38px}.journal-card h3{font-size:28px}
+@media(max-width:760px){h1{font-size:72px;letter-spacing:-.05em}h1 em{letter-spacing:-.05em}#modal-content h2{font-size:32px}.journal-card h3{font-size:25px;line-height:1.5}}
+
+@media(max-width:760px){h1{font-size:clamp(44px,14vw,64px);letter-spacing:-.035em}h1 em{letter-spacing:-.035em}}
