@@ -63,3 +63,5 @@ h1.hero-lettering{display:block;width:min(760px,90%);margin:22px auto 4px;font-s
 #modal-content h2,.journal-card h3,.article-body h3,.life-card h3,.music-card h3,.film-card h3,.note-paper h3{font-family:'Kitchen Pen','PingFang SC',sans-serif;font-weight:400;letter-spacing:.025em;font-synthesis:none;line-height:1.5}
 #modal-content h2{font-size:44px}.journal-card h3{font-size:34px}.article-body h3{font-size:32px}
 @media(max-width:760px){h1.hero-lettering{width:96%;margin:28px auto 12px}.hero-lettering .title-spark{width:23px;height:23px;right:-3px;top:6px}#modal-content h2{font-size:38px}.journal-card h3{font-size:30px}.article-body h3{font-size:28px}}
+
+.journal-card h3 .title-unit{display:inline-block;white-space:nowrap}
