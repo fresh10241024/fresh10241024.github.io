@@ -80,3 +80,16 @@ h1.hero-lettering{display:block;width:min(760px,90%);margin:22px auto 4px;font-s
 .sleeve-copy{padding:18px}.sleeve-copy h3{font-size:21px;font-weight:500;margin:10px 0 3px;line-height:1.5;overflow-wrap:anywhere}.sleeve-copy .section-label{font-size:11px;letter-spacing:.04em}
 #modal-content .sleeve-artist{font-size:14px;margin:3px 0;color:#646e56}#modal-content .sleeve-note{font-size:14px;line-height:1.8;margin:12px 0 0}.more-music{border-top:1px solid #c6cdb9;border-bottom:1px solid #c6cdb9;padding:20px 0}.more-music summary{font-size:16px;cursor:pointer;font-weight:500}.track-list{list-style:none;padding:0;margin:18px 0 0}.track-list li{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid #e0e3d6;font-size:15px;line-height:1.6}.track-list li:last-child{border:0}.track-list small{font-size:13px;color:#6f795f;text-align:right;max-width:45%;flex-shrink:0}.music-closing{margin-top:28px}.music-card .text-button{margin-top:14px;font-size:14px}
 @media(max-width:760px){.record-shelf{gap:16px 12px}.sleeve-art{height:112px}.mini-vinyl{width:82px;height:82px}.sleeve-copy{padding:14px 12px}.sleeve-copy h3{font-size:18px}.track-list li{display:block}.track-list small{display:block;text-align:left;max-width:none;margin-top:3px}}
+
+/* Keep early, exploratory roles available without giving them the same weight as recent work. */
+.early-explorations{margin-top:30px;border:1px solid #c7cbb8;border-radius:16px;background:#f1f0e5;overflow:hidden}
+.early-explorations>summary{list-style:none;position:relative;padding:22px 58px 22px 24px;cursor:pointer}
+.early-explorations>summary::-webkit-details-marker{display:none}
+.early-explorations>summary::after{content:'＋';position:absolute;right:24px;top:50%;transform:translateY(-50%);font-size:22px;color:#687257;font-weight:300}
+.early-explorations[open]>summary::after{content:'－'}
+.early-explorations>summary span{display:block;font-size:12px;letter-spacing:.12em;color:#788167;margin-bottom:7px}
+.early-explorations>summary strong{display:block;font-size:19px;line-height:1.6;font-weight:500;color:#35432f}
+.early-explorations>summary small{display:block;margin-top:7px;font-size:13px;color:#767d6b}
+.early-explorations>p{margin:0;padding:20px 24px 0;border-top:1px solid #d3d5c6;font-size:14px!important;color:#6b725f!important}
+.early-explorations .journal-cards{padding:0 24px 24px;margin-top:18px}
+@media(max-width:760px){.intro{max-width:330px;margin-left:auto;margin-right:auto;line-height:1.8}.early-explorations>summary{padding:19px 50px 19px 18px}.early-explorations>summary::after{right:18px}.early-explorations>summary strong{font-size:17px}.early-explorations>p{padding:17px 18px 0}.early-explorations .journal-cards{padding:0 18px 18px}}
