@@ -1,0 +1,4 @@
+export const escapeHTML=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+// Only paragraphs, headings and quotes are interpreted; all user text is escaped.
+export function renderBody(s){return String(s||'').split(/\n\s*\n/).map(block=>{const lines=block.split('\n');const heading=lines[0].match(/^#{1,3} (.+)$/);if(heading)return `<h3>${escapeHTML(heading[1])}</h3>`+(lines.length>1?`<p>${escapeHTML(lines.slice(1).join('\n')).replace(/\n/g,'<br>')}</p>`:'');if(block.startsWith('> '))return `<blockquote>${escapeHTML(block.slice(2)).replace(/\n/g,'<br>')}</blockquote>`;return `<p>${escapeHTML(block).replace(/\n/g,'<br>')}</p>`}).join('')}
+export function safeURL(s){try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}

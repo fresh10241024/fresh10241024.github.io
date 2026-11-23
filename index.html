@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f5ed"><title>瑞晞的创意小厨房 · Portfolio</title><meta name="description" content="欢迎来到瑞晞的创意小厨房，灵感、作品与日常正在这里慢慢发生。"><link rel="stylesheet" href="style.css"></head>
+<body>
+<svg class="icons" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="chef" viewBox="0 0 64 64"><path d="M20 43 15 25C3 25 7 8 19 13 21 0 42 1 44 14 58 8 64 25 50 28L46 44M21 44h26v10H21zM28 19l2 18m11-18-3 18"/></symbol>
+<symbol id="spark" viewBox="0 0 64 64"><path d="m32 6 5 19 20 7-20 6-5 20-6-20L6 32l20-7zM52 3v12M46 9h12"/></symbol>
+<symbol id="book" viewBox="0 0 64 64"><path d="M9 12q12-4 23 5 11-9 23-5v40q-12-4-23 3-11-7-23-3zM32 17v38M16 24l10 3m-10 6 10 3m14-9 8-3m-8 12 8-3"/></symbol>
+<symbol id="flower" viewBox="0 0 64 64"><path d="M30 25C7 0 53-8 38 24 68 4 73 45 42 36 67 61 25 76 27 43 2 64-9 22 25 29z"/><circle cx="33" cy="33" r="7"/></symbol>
+<symbol id="mail" viewBox="0 0 64 64"><path d="M7 17h50v33H7zM8 18l24 19 24-19M8 49l16-17m32 17L40 32"/></symbol>
+</defs></svg>
+<div class="site-shell">
+<header><a href="#" class="wordmark" aria-label="Ruixi · 回到首页">R<span class="logo-star">✳</span>X<span class="wordmark-small">a little<br>portfolio</span></a><nav aria-label="主导航"><button data-open="works">拿手好菜</button><button data-open="career">掌勺日记</button><button data-open="notes">脑内厨房</button><button data-open="about">关于我</button><button class="contact-nav" data-open="contact">打个招呼 <span>☺</span></button></nav></header>
+<main>
+<div class="eyebrow">WELCOME TO MY LITTLE CREATIVE KITCHEN</div>
+<h1>Let me <em>cook.</em><svg class="title-spark"><use href="#spark"/></svg></h1>
+<p class="intro">产品、技术和生活，都想认真尝一尝。</p>
+<section class="kitchen" aria-label="交互作品餐桌">
+<div class="doodle doodle-left"><svg><use href="#chef"/></svg><span>made with curiosity</span></div>
+<div class="doodle doodle-right"><svg><use href="#flower"/></svg><span>fresh ideas, daily.</span></div>
+<div class="pick-note">PICK <b>3</b> !<span>给自己点一份灵感</span><svg viewBox="0 0 90 50"><path d="M5 5Q7 46 73 33m-9-10 12 9-10 11"/></svg></div>
+<div class="person"><img src="assets/portrait.png" alt="戴着帽子和眼镜的瑞晞" fetchpriority="high"><span class="hello-label">Hi, I'm 瑞晞 <span>✳</span></span></div>
+<svg class="conveyor" viewBox="0 0 1200 360" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="600" cy="181" rx="567" ry="139"/><ellipse cx="600" cy="181" rx="475" ry="94"/><path d="M33 181v24c0 77 254 139 567 139s567-62 567-139v-24M39 202c42 72 280 123 561 123s519-51 561-123M180 80l43 38m230-71 12 47m374-35-23 47m244 20-61 27M1112 237l-61-16M819 307l-20-43M433 314l14-44M119 250l65-24"/></svg>
+<div id="orbit" aria-label="点击餐盘打开内容"></div>
+<div class="table-note">GOOD THINGS TAKE A LITTLE TIME.</div>
+</section>
+<div class="bottom-strip"><div class="plate-key"><i></i><i></i><i></i><span>灵感正在上桌</span></div><div class="hint">点击餐盘，尝尝我的想法</div><button id="motion" aria-pressed="false"><span class="pause-icon">Ⅱ</span><span id="motion-label">暂停转盘</span></button></div>
+</main>
+<footer><span>瑞晞的创意小厨房</span><span>Curiosity is always on the menu.</span><button data-open="receipt">我的灵感小票 <span id="ticket-count">0</span></button></footer>
+</div>
+<dialog id="modal"><div class="modal-top"><span id="modal-kicker">FROM THE KITCHEN</span><button id="close" aria-label="关闭弹窗">×</button></div><div id="modal-content"></div></dialog>
+<script>window.PORTFOLIO_STATIC=true;</script><script src="app.js"></script><script type="module" src="journal.js"></script>
+</body></html>
