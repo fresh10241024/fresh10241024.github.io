@@ -65,3 +65,8 @@ h1.hero-lettering{display:block;width:min(760px,90%);margin:22px auto 4px;font-s
 @media(max-width:760px){h1.hero-lettering{width:96%;margin:28px auto 12px}.hero-lettering .title-spark{width:23px;height:23px;right:-3px;top:6px}#modal-content h2{font-size:38px}.journal-card h3{font-size:30px}.article-body h3{font-size:28px}}
 
 .journal-card h3 .title-unit{display:inline-block;white-space:nowrap}
+
+/* Reserve expressive pen lettering for the English hero only. */
+#modal-content h2,.journal-card h3,.article-body h3,.life-card h3,.music-card h3,.film-card h3,.note-paper h3{font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:500;letter-spacing:.015em;line-height:1.55}
+#modal-content h2{font-size:32px}.journal-card h3{font-size:24px}.article-body h3{font-size:23px}
+@media(max-width:760px){#modal-content h2{font-size:28px}.journal-card h3{font-size:22px}.article-body h3{font-size:21px}}
