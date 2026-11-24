@@ -66,6 +66,10 @@ h1.hero-lettering{display:block;width:min(760px,90%);margin:22px auto 4px;font-s
 
 .journal-card h3 .title-unit{display:inline-block;white-space:nowrap}
 
+/* Prompt entries should read like reusable tools, not pull quotes. */
+.skill-article .article-body blockquote{font:14px/1.85 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;font-style:normal;color:#30382d;background:#e8ecdf;border:1px solid #c4ccb8;border-left:4px solid #78865d;border-radius:10px;padding:22px 24px;overflow-wrap:anywhere}
+@media(max-width:760px){.skill-article .article-body blockquote{font-size:13px;line-height:1.8;padding:18px 16px}}
+
 /* Reserve expressive pen lettering for the English hero only. */
 #modal-content h2,.journal-card h3,.article-body h3,.life-card h3,.music-card h3,.film-card h3,.note-paper h3{font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:500;letter-spacing:.015em;line-height:1.55}
 #modal-content h2{font-size:32px}.journal-card h3{font-size:24px}.article-body h3{font-size:23px}
