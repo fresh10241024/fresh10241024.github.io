@@ -100,7 +100,7 @@ h1.hero-lettering{display:block;width:min(760px,90%);margin:22px auto 4px;font-s
 
 /* Homepage reduction: keep the title, portrait and destinations as the only narrative layer. */
 main{padding-top:34px}
-.intro{max-width:720px;margin:12px auto 0;font-size:17px;line-height:1.8;letter-spacing:.035em;color:#575d4f}
+.intro{max-width:720px;margin:12px auto 0;font-family:'Kitchen Pen','Bradley Hand','Segoe Print',cursive;font-size:18px;line-height:1.8;letter-spacing:.06em;color:#575d4f}
 .dish-label{margin-top:14px;font-size:15px;font-weight:500;letter-spacing:.08em}
 .doodle{opacity:.7}
 .pick-note{font-size:17px;letter-spacing:.06em}
@@ -110,4 +110,4 @@ main{padding-top:34px}
 #motion-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 footer{font-size:13px;padding:18px 0 22px}
 footer button:last-child{margin-left:auto}
-@media(max-width:760px){main{padding-top:25px}.intro{max-width:345px;font-size:14px;line-height:1.85;letter-spacing:.025em;margin-top:8px}.kitchen{height:495px}.person{top:54px}.doodle{top:28px}.doodle-right{top:28px}.pick-note{top:102px;font-size:14px}.pick-note b{font-size:31px}.dish-label{font-size:13px;letter-spacing:.04em;margin-top:11px}.bottom-strip{margin-bottom:12px}footer{font-size:12px}}
+@media(max-width:760px){main{padding-top:25px}.intro{max-width:345px;font-size:16px;line-height:1.85;letter-spacing:.045em;margin-top:8px}.kitchen{height:495px}.person{top:54px}.doodle{top:28px}.doodle-right{top:28px}.pick-note{top:102px;font-size:14px}.pick-note b{font-size:31px}.dish-label{font-size:13px;letter-spacing:.04em;margin-top:11px}.bottom-strip{margin-bottom:12px}footer{font-size:12px}}
