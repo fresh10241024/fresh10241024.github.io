@@ -1,8 +1,8 @@
 import {escapeHTML as esc,renderBody,safeURL} from './journal-format.mjs';
 const dialog=document.querySelector('#modal'),area=document.querySelector('#modal-content');
-const labels={project:'拿手好菜',experience:'掌勺日记',post:'脑内厨房',skill:'Skills',person:'灵感来客'};
-const subtitles={project:'个人项目',experience:'工作经历',post:'思考随笔',skill:'好用技能',person:'欣赏的人与启发'};
-const intros={project:'从一个问题出发，做出可以使用的东西，再回头审视最初的假设。',experience:'不同团队、不同现场。每段经历，单独展开。',post:'正在学习的、还没想明白的，以及做完之后重新想过的。',skill:'真正用过、愿意留下来的 Skills：它解决什么问题，适合谁，以及我为什么推荐。',person:'欣赏的人，以及他们让我重新思考的事情。'};
+const labels={project:'拿手好菜',research:'毕设研究',experience:'掌勺日记',post:'脑内厨房',skill:'Skills',person:'灵感来客'};
+const subtitles={project:'个人项目',research:'AI Memory · Personal Agent',experience:'工作经历',post:'思考随笔',skill:'好用技能',person:'欣赏的人与启发'};
+const intros={project:'从一个问题出发，做出可以使用的东西，再回头审视最初的假设。',research:'围绕 AI Memory、Personal Agent 与个性化交互展开的毕业设计记录。',experience:'不同团队、不同现场。每段经历，单独展开。',post:'正在学习的、还没想明白的，以及做完之后重新想过的。',skill:'真正用过、愿意留下来的 Skills：它解决什么问题，适合谁，以及我为什么推荐。',person:'欣赏的人，以及他们让我重新思考的事情。'};
 let canEdit=false,dirty=false,busy=false,revision=0,returnFocus=null,currentType='post';
 let staticEntries;
 const createId=()=>typeof crypto.randomUUID==='function'?crypto.randomUUID():`entry-${Date.now().toString(36)}-${Math.random().toString(36).slice(2,10)}`;
